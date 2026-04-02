@@ -8,6 +8,5 @@
   },
   "homepage": "https://cognova.dev",
   "repository": "cognova-dev/cognova-skill",
-  "license": "MIT",
-  "hooks": "./hooks/hooks.json"
+  "license": "MIT"
 }
