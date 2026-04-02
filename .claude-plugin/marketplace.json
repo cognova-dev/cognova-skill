@@ -1,14 +1,20 @@
 {
-  "name": "Cognova",
-  "description": "Cognova workspace integration — tasks, agents, memory, knowledge",
-  "version": "1.0.0",
+  "name": "cognova",
+  "owner": {
+    "name": "Cognova",
+    "email": "tony@cognova.dev"
+  },
+  "metadata": {
+    "description": "Cognova workspace integration — tasks, agents, memory, knowledge"
+  },
   "plugins": [
     {
       "name": "cognova",
+      "source": ".",
       "description": "Connect to your Cognova workspace to manage tasks, query AI agents, search memories, read knowledge files, and track projects. Includes automated hooks for proactive memory sync.",
       "version": "1.1.0",
-      "source": {
-        "github": "cognova-dev/cognova-skill"
+      "author": {
+        "name": "Cognova"
       }
     }
   ]
