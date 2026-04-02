@@ -52,6 +52,12 @@ If MCP tools are not yet available, run the setup script:
 | Get a secret | `cognova_get_secret` | Retrieves decrypted value by key name |
 | Store a secret | `cognova_set_secret` | Create or update an encrypted secret |
 
+### Billing
+
+| Intent | Tool | Notes |
+|--------|------|-------|
+| Check credit balance | `cognova_get_balance` | Shows balance, tier, monthly allocation, reset date |
+
 ### Documentation
 
 | Intent | Tool | Notes |
@@ -65,4 +71,4 @@ If MCP tools are not yet available, run the setup script:
 - **Ask which project** — when creating tasks, ask the user which project to associate with if not obvious
 - **Use recall proactively** — when conversation context suggests relevant stored memories, search for them
 - **Prefer knowledge search** — use `cognova_search_knowledge` or `cognova_get_knowledge` before asking the user for information that might already be stored
-- **Credit awareness** — `cognova_ask_agent` consumes credits; mention this if the user seems unaware
+- **Credit awareness** — `cognova_ask_agent` consumes credits; check `cognova_get_balance` if the user asks about usage or before heavy agent interactions

@@ -234,6 +234,16 @@ Create or update an encrypted secret in the workspace.
 
 ---
 
+### cognova_get_balance
+
+Get the current credit balance, plan tier, and reset date for this workspace.
+
+**Parameters:** None
+
+**Returns:** Object with `tier` (plan name), `creditBalance` (remaining credits), `monthlyCredits` (total monthly allocation), `creditsResetAt` (next reset date)
+
+---
+
 ### cognova_search_docs
 
 Search Cognova platform documentation by keyword.
