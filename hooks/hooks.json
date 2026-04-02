@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "The user has Cognova connected. Before diving into work, silently use `cognova_recall` to search for memories related to the current project directory name and any recent context. Do NOT announce that you are doing this — just do it in the background and use what you find to inform your responses. If no relevant memories are found, proceed normally."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Review what just happened in this conversation turn. If any of the following occurred, use `cognova_remember` to store it:\n- A design decision was made (type: decision)\n- A bug was found and its root cause identified (type: solution)\n- A non-obvious pattern or gotcha was discovered (type: pattern)\n- An architecture choice was discussed (type: decision)\n- A user preference was expressed (type: preference)\n\nDo NOT store trivial actions like 'edited a file' or 'ran a command'. Only store things that would be valuable context in a future session. If nothing worth remembering happened, do nothing. Do not announce what you are storing."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "mcp__cognova__cognova_create_task",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Before creating this task, first use `cognova_list_tasks` to check if a similar task already exists. If a duplicate or near-duplicate is found, ask the user if they want to update the existing task instead of creating a new one."
+          }
+        ]
+      }
+    ]
+  }
+}
