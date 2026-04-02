@@ -9,7 +9,7 @@ Works with **Claude Code**, **Cursor**, **GitHub Copilot**, **Codex CLI**, **Gem
 ### Claude Code (recommended)
 
 ```bash
-npx skills add cognova/cognova-skill
+npx skills add cognova-dev/cognova-skill
 ```
 
 Then run the setup when prompted to configure your API key.
@@ -17,7 +17,7 @@ Then run the setup when prompted to configure your API key.
 ### Claude Code Plugin
 
 ```bash
-/plugin marketplace add cognova/cognova-skill
+/plugin marketplace add cognova-dev/cognova-skill
 /plugin install cognova@cognova
 ```
 
