@@ -1,0 +1,13 @@
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    required:
+      - apiKey
+    properties:
+      apiKey:
+        type: string
+        description: Your Cognova API key. Get one at https://cognova.dev/settings/api-keys
+  url: https://cognova.dev/mcp
+  headers:
+    Authorization: "Bearer ${apiKey}"

@@ -1,0 +1,12 @@
+{
+  "name": "cognova",
+  "description": "Connect to your Cognova workspace to manage tasks, query AI agents, search memories, read knowledge files, and track projects.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Cognova",
+    "url": "https://cognova.dev"
+  },
+  "homepage": "https://cognova.dev",
+  "repository": "cognova/cognova-skill",
+  "license": "MIT"
+}
