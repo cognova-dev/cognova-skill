@@ -16,7 +16,7 @@ If `cognova_*` MCP tools are NOT available, the user needs to connect their work
    ```bash
    claude mcp add cognova https://cognova.dev/mcp --transport http --header "Authorization: Bearer THE_KEY"
    ```
-3. Tell them to restart Claude Code (or run `/reload-plugins`) for the MCP tools to become available
+3. Tell them to **restart Claude Code** (quit and reopen) for the MCP tools to become available. `/reload-plugins` alone may not be sufficient — a full restart ensures tools are discovered
 
 ## Tool Reference
 

@@ -2,12 +2,9 @@
 
 Complete reference for all Cognova MCP tools. Tools are workspace-scoped — all data is isolated to the authenticated workspace.
 
-## Access Levels
+## Access
 
-| Level | Plan | Tools Available |
-|-------|------|-----------------|
-| Read | Free+ | List/get/search tools |
-| Full | Starter+ | All read tools + create/update/delete/invoke |
+All tools are available on every plan. Agent invocation (`ask_agent`) consumes credits. Rate limits are enforced per tier.
 
 ## Tools
 
@@ -31,8 +28,6 @@ Send a message to a specific Cognova agent and get a response. The agent can use
 - `message` (string, required) — The message/question to send
 
 **Returns:** Agent's text response
-
-**Access:** Starter+ only
 
 ---
 
@@ -73,8 +68,6 @@ Create a new task in the workspace.
 
 **Returns:** Created task object
 
-**Access:** Starter+ only
-
 ---
 
 ### cognova_update_task
@@ -91,8 +84,6 @@ Update an existing task.
 
 **Returns:** Updated task object
 
-**Access:** Starter+ only
-
 ---
 
 ### cognova_complete_task
@@ -103,8 +94,6 @@ Mark a task as done.
 - `task_id` (string, required) — Task ID to complete
 
 **Returns:** Confirmation with task title
-
-**Access:** Starter+ only
 
 ---
 
@@ -129,8 +118,6 @@ Create a new project in the workspace.
 
 **Returns:** Created project object
 
-**Access:** Starter+ only
-
 ---
 
 ### cognova_update_project
@@ -144,8 +131,6 @@ Update an existing project.
 - `status` (string, optional) — Project status (e.g. `active`, `archived`)
 
 **Returns:** Updated project object
-
-**Access:** Starter+ only
 
 ---
 
@@ -171,8 +156,6 @@ Store a memory in the workspace knowledge base.
 - `type` (string, optional) — Memory type: `fact`, `decision`, `solution`, `pattern`, `preference`, `summary`. Default: `fact`
 
 **Returns:** Confirmation with memory ID
-
-**Access:** Starter+ only
 
 ---
 
@@ -216,8 +199,6 @@ Get the decrypted value of a secret by its key name.
 
 **Returns:** Decrypted secret value
 
-**Access:** Starter+ only
-
 ---
 
 ### cognova_set_secret
@@ -229,8 +210,6 @@ Create or update an encrypted secret in the workspace.
 - `value` (string, required) — The secret value to encrypt and store
 
 **Returns:** Confirmation of creation or update
-
-**Access:** Starter+ only
 
 ---
 
