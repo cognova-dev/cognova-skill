@@ -11,17 +11,6 @@
         ]
       }
     ],
-    "Stop": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "prompt",
-            "prompt": "IMPORTANT: First check if `cognova_remember` is available as a tool. If it is NOT available (MCP not configured), do nothing and stop immediately — do not respond, do not output anything.\n\nIf `cognova_remember` IS available, review what just happened in this conversation turn. If any of the following occurred, use `cognova_remember` to store it:\n- A design decision was made (type: decision)\n- A bug was found and its root cause identified (type: solution)\n- A non-obvious pattern or gotcha was discovered (type: pattern)\n- An architecture choice was discussed (type: decision)\n- A user preference was expressed (type: preference)\n\nDo NOT store trivial actions like 'edited a file' or 'ran a command'. Only store things that would be valuable context in a future session. If nothing worth remembering happened, do nothing. Do not respond or output any text — just stop silently."
-          }
-        ]
-      }
-    ],
     "PreToolUse": [
       {
         "matcher": "mcp__cognova__cognova_create_task",

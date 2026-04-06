@@ -72,3 +72,4 @@ If MCP tools are not yet available, run the setup script:
 - **Use recall proactively** — when conversation context suggests relevant stored memories, search for them
 - **Prefer knowledge search** — use `cognova_search_knowledge` or `cognova_get_knowledge` before asking the user for information that might already be stored
 - **Credit awareness** — `cognova_ask_agent` consumes credits; check `cognova_get_balance` if the user asks about usage or before heavy agent interactions
+- **Auto-remember** — after meaningful work, proactively use `cognova_remember` to store design decisions (type: decision), bug solutions (type: solution), non-obvious patterns (type: pattern), and user preferences (type: preference). Do NOT store trivial actions like file edits or command runs
