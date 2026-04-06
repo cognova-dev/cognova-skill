@@ -48,6 +48,8 @@ If `cognova_*` MCP tools are NOT available, the user needs to connect their work
 | Store a memory | `cognova_remember` | Save a fact, decision, or context for later |
 | List knowledge files | `cognova_list_knowledge` | Browse stored documents |
 | Read knowledge file | `cognova_get_knowledge` | Read by virtual file path |
+| Create knowledge file | `cognova_create_knowledge` | Create a new file with path and content |
+| Update knowledge file | `cognova_update_knowledge` | Replace content of an existing file |
 
 ### Secrets
 
