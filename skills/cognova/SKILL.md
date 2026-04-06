@@ -11,7 +11,7 @@ You are connected to the user's Cognova workspace via MCP. Use the `cognova_*` t
 
 If MCP tools are not yet available, run the setup script:
 
-!`${CLAUDE_SKILL_DIR}/scripts/setup.sh`
+!`${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh`
 
 ## Tool Reference
 
