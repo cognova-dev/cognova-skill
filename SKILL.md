@@ -9,9 +9,14 @@ You are connected to the user's Cognova workspace via MCP. Use the `cognova_*` t
 
 ## Setup
 
-If MCP tools are not yet available, run the setup script:
+If `cognova_*` MCP tools are NOT available, the user needs to connect their workspace:
 
-!`${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh`
+1. Ask the user for their Cognova API key. Tell them to get one at https://cognova.dev/settings/api-keys
+2. Once they provide the key, run this command to configure the MCP server:
+   ```bash
+   claude mcp add cognova https://cognova.dev/mcp --transport http --header "Authorization: Bearer THE_KEY"
+   ```
+3. Tell them to restart Claude Code (or run `/reload-plugins`) for the MCP tools to become available
 
 ## Tool Reference
 
